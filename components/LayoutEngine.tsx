@@ -77,9 +77,11 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
             <div className="max-w-4xl mx-auto">
               <div className={`p-6 sm:p-10 glass ${theme.borderRadius} sm:bg-opacity-100 bg-opacity-70`}>
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-cursive font-extrabold mb-6 sm:mb-8 leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
-                  הבריאות שלכם מגיעה עד המשרד
-                </h2>
+                <div className="hidden sm:flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-cursive font-extrabold leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
+                    הבריאות שלכם מגיעה עד המשרד
+                  </h2>
+                </div>
                 <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                   <Icon name="Info" className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: theme.primaryColor }} />
                   <h3 className="text-2xl sm:text-4xl font-bold">{content.sections.what.title}</h3>
