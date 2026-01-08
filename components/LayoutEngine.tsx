@@ -26,9 +26,9 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
               <Icon name="Leaf" className="w-6 h-6" />
             </div>
             <div className="flex-1">
-              <div className="flex items-baseline justify-between gap-3">
+              <div className="flex items-baseline gap-3">
                 <h1 className="text-lg font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-base font-bold whitespace-nowrap" style={{ color: '#dc2626', marginLeft: '-15px' }}>
+                <a href={`tel:${content.brand.phone}`} className="text-base font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
