@@ -26,13 +26,13 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
               <Icon name="Leaf" className="w-6 h-6" />
             </div>
             <div className="flex-1">
-              <div className="flex items-baseline justify-between gap-2">
+              <div className="flex items-baseline justify-between gap-1">
                 <h1 className="text-lg font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-sm font-bold" style={{ color: theme.primaryColor }}>
+                <a href={`tel:${content.brand.phone}`} className="text-base font-bold" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
-              <p className="text-sm font-cursive font-bold mt-1" style={{ color: '#22c55e' }}>טווינא ובריאות במשרד</p>
+              <p className="text-sm font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא ובריאות במשרד</p>
             </div>
           </div>
 
