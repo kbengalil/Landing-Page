@@ -133,7 +133,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                    {content.sections.service.features.map((f, i) => (
                      <div key={i} className="flex items-center gap-3 sm:gap-4 text-gray-900 text-lg sm:text-2xl" style={{ marginLeft: i === 0 ? '15px' : '0' }}>
                        <Icon name="Star" className="text-green-400 w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0" style={{ fill: '#22c55e' }} />
-                       <span className="text-right">{f}</span>
+                       <span className="text-right" dangerouslySetInnerHTML={{ __html: f }}></span>
                      </div>
                    ))}
                 </div>
