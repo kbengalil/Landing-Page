@@ -32,7 +32,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                   {content.brand.phone}
                 </a>
               </div>
-              <p className="text-sm font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא ‬+‬ ייעוץ כושר ובריאות עד המשרד</p>
+              <p className="text-sm font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא, ייעוץ כושר ובריאות עד המשרד</p>
             </div>
           </div>
 
