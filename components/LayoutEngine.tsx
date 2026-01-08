@@ -19,8 +19,25 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
     <>
       {/* Dynamic Header */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-opacity-5 bg-white/70" style={{ borderBottomColor: theme.primaryColor }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 sm:h-28 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-8 py-2 sm:py-0">
-          <div className="flex items-center gap-2 sm:gap-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-auto sm:h-28 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-8 py-2 sm:py-0">
+          {/* Mobile Header: Name and Tagline on same line */}
+          <div className="sm:hidden flex items-center gap-2">
+            <div className={`w-12 h-12 flex items-center justify-center text-white ${theme.borderRadius}`} style={{ backgroundColor: theme.primaryColor }}>
+              <Icon name="Leaf" className="w-6 h-6" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-baseline gap-2">
+                <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
+                <p className="text-xs font-cursive font-bold" style={{ color: '#22c55e' }}>הבריאות שלכם מגיעה עד המשרד</p>
+              </div>
+              <a href={`tel:${content.brand.phone}`} className="text-sm font-bold mt-1 block" style={{ color: theme.primaryColor }}>
+                {content.brand.phone}
+              </a>
+            </div>
+          </div>
+
+          {/* Tablet/Desktop Header */}
+          <div className="hidden sm:flex items-center gap-2 sm:gap-4">
             <div className={`w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center text-white ${theme.borderRadius}`} style={{ backgroundColor: theme.primaryColor }}>
               <Icon name="Leaf" className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
@@ -34,12 +51,6 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <span className="font-cursive text-4xl sm:text-6xl font-bold" style={{ color: theme.primaryColor }}>Relax & Recover</span>
           </div>
 
-          <div className="flex sm:hidden items-center">
-            <a href={`tel:${content.brand.phone}`} className="text-base sm:text-lg font-bold" style={{ color: theme.primaryColor }}>
-              {content.brand.phone}
-            </a>
-          </div>
-
           <div className="hidden md:flex items-center gap-8">
             <a href={`tel:${content.brand.phone}`} className="flex items-center gap-2 group">
               <span className="font-bold text-3xl">{content.brand.phone}</span>
@@ -49,7 +60,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
       </header>
 
       {/* Main Experience */}
-      <main className="relative pt-20 sm:pt-28">
+      <main className="relative pt-24 sm:pt-28">
         {/* Top Section with Background Image */}
         <section className="relative overflow-hidden">
           {/* Background Image */}
