@@ -107,16 +107,6 @@ const App: React.FC = () => {
         </div>
       </aside>
 
-      {/* Floating Toggle Button */}
-      {!isSidebarOpen && (
-        <button
-          onClick={() => setIsSidebarOpen(true)}
-          className="fixed right-8 bottom-8 z-[90] p-4 bg-white shadow-2xl rounded-full text-emerald-700 hover:scale-110 transition-transform flex items-center gap-2 group border border-emerald-100"
-        >
-          <Settings className="w-6 h-6 animate-[spin_6s_linear_infinite]" />
-          <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 font-bold whitespace-nowrap px-0 group-hover:px-2">Lab</span>
-        </button>
-      )}
 
       {/* Main Content Area */}
       <main>
