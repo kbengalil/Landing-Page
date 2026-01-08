@@ -65,7 +65,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           {/* What is Tuina Section */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
             <div className="max-w-4xl mx-auto">
-              <div className={`p-6 sm:p-10 glass ${theme.borderRadius}`}>
+              <div className={`p-6 sm:p-10 glass ${theme.borderRadius} sm:bg-opacity-100 bg-opacity-70`}>
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-cursive font-extrabold mb-6 sm:mb-8 leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
                   הבריאות שלכם מגיעה עד המשרד
                 </h2>
