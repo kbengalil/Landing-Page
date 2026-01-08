@@ -82,7 +82,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                     הבריאות שלכם מגיעה עד המשרד
                   </h2>
                 </div>
-                <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold opacity-80 leading-relaxed">
+                <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content.map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
