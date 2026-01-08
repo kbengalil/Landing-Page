@@ -98,10 +98,9 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           {/* Section 2: About & Benefits Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12">
             {/* About */}
-            <div className="bg-green-50 p-6 sm:p-8 rounded-3xl">
-              <div className={`p-6 sm:p-10 ${theme.borderRadius} bg-white/60`}>
-                 <h3 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-                   <Icon name="User" style={{ color: theme.primaryColor }} />
+            <div className="bg-green-50 p-6 sm:p-8 rounded-3xl lg:col-span-2">
+              <div className={`p-6 sm:p-10 ${theme.borderRadius} bg-white/60 max-w-5xl mx-auto`}>
+                 <h3 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
                    {content.sections.about.title}
                  </h3>
                  <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
