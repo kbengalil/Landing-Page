@@ -37,24 +37,19 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           </div>
 
           {/* Tablet/Desktop Header */}
-          <div className="hidden sm:flex items-center gap-2 sm:gap-4">
-            <div className={`w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center text-white ${theme.borderRadius}`} style={{ backgroundColor: theme.primaryColor }}>
-              <Icon name="Leaf" className="w-6 h-6 sm:w-8 sm:h-8" />
+          <div className="hidden sm:flex flex-1 justify-center items-center gap-4">
+            <div className={`w-16 h-16 flex items-center justify-center text-white ${theme.borderRadius}`} style={{ backgroundColor: theme.primaryColor }}>
+              <Icon name="Leaf" className="w-8 h-8" />
             </div>
-            <div>
-              <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-              <p className="text-xs sm:text-base uppercase tracking-widest opacity-50 font-bold mt-1">{content.brand.title}</p>
+            <div className="flex flex-col">
+              <div className="flex items-baseline gap-4">
+                <h1 className="text-4xl font-black tracking-tight leading-none">{content.brand.name}</h1>
+                <a href={`tel:${content.brand.phone}`} className="text-3xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                  {content.brand.phone}
+                </a>
+              </div>
+              <p className="text-base uppercase tracking-widest opacity-50 font-bold mt-1">{content.brand.title}</p>
             </div>
-          </div>
-
-          <div className="hidden md:flex flex-1 justify-center">
-            <span className="font-cursive text-4xl sm:text-6xl font-bold" style={{ color: theme.primaryColor }}>Relax & Recover</span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8">
-            <a href={`tel:${content.brand.phone}`} className="flex items-center gap-2 group">
-              <span className="font-bold text-3xl">{content.brand.phone}</span>
-            </a>
           </div>
         </div>
       </header>
