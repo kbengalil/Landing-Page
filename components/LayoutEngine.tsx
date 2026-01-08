@@ -1,0 +1,152 @@
+
+import React from 'react';
+import * as LucideIcons from 'lucide-react';
+import { DesignTheme, LandingContent } from '../types';
+
+interface LayoutEngineProps {
+  theme: DesignTheme;
+  content: LandingContent;
+}
+
+// Fixed Icon component to accept style prop
+const Icon = ({ name, className, style }: { name: string; className?: string; style?: React.CSSProperties }) => {
+  const LucideIcon = (LucideIcons as any)[name] || LucideIcons.Heart;
+  return <LucideIcon className={className} style={style} />;
+};
+
+const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
+  return (
+    <>
+      {/* Dynamic Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-opacity-5 bg-white/70" style={{ borderBottomColor: theme.primaryColor }}>
+        <div className="max-w-6xl mx-auto px-6 h-28 flex justify-between items-center gap-8">
+          <div className="flex items-center gap-4">
+            <div className={`w-16 h-16 flex items-center justify-center text-white ${theme.borderRadius}`} style={{ backgroundColor: theme.primaryColor }}>
+              <Icon name="Leaf" className="w-8 h-8" />
+            </div>
+            <div>
+              <h1 className="text-4xl font-black tracking-tight leading-none">{content.brand.name}</h1>
+              <p className="text-base uppercase tracking-widest opacity-50 font-bold mt-1">{content.brand.title}</p>
+            </div>
+          </div>
+
+          <div className="flex-1 flex justify-center">
+            <span className="font-cursive text-6xl font-bold" style={{ color: theme.primaryColor }}>Relax & Recover</span>
+          </div>
+
+          <div className="hidden md:flex items-center gap-8">
+            <a href={`tel:${content.brand.phone}`} className="flex items-center gap-2 group">
+              <span className="font-bold text-3xl">{content.brand.phone}</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Experience */}
+      <main className="relative pt-28">
+        {/* Top Section with Background Image */}
+        <section className="relative overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 w-full h-full -z-10">
+            <img
+              src="/bed_1.png"
+              className="w-full h-full object-cover"
+              alt="Tuina Massage Background"
+            />
+            <div className="absolute inset-0 bg-white/5"></div>
+          </div>
+
+          {/* What is Tuina Section */}
+          <div className="max-w-6xl mx-auto px-6 pb-12">
+            <div className="max-w-4xl mx-auto">
+              <div className={`p-10 glass ${theme.borderRadius}`}>
+                <h2 className="text-3xl md:text-5xl font-cursive font-extrabold mb-8 leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
+                  הבריאות שלכם מגיעה עד המשרד
+                </h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <Icon name="Info" className="w-6 h-6" style={{ color: theme.primaryColor }} />
+                  <h3 className="text-4xl font-bold">{content.sections.what.title}</h3>
+                </div>
+                <div className="space-y-4 text-2xl opacity-80 leading-relaxed">
+                  {content.sections.what.content.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Grid Sections */}
+        <div className="max-w-6xl mx-auto px-6 pb-32 space-y-12">
+
+          {/* Section 2: About & Benefits Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* About */}
+            <div className={`p-10 glass ${theme.borderRadius}`}>
+               <h3 className="text-4xl font-bold mb-6 flex items-center gap-3">
+                 <Icon name="User" style={{ color: theme.primaryColor }} />
+                 {content.sections.about.title}
+               </h3>
+               <div className="space-y-4 opacity-70 leading-relaxed text-2xl">
+                  {content.sections.about.content.map((p, i) => <p key={i}>{p}</p>)}
+               </div>
+            </div>
+
+            {/* Benefits */}
+            <div className={`p-6 bg-slate-900 text-white ${theme.borderRadius} shadow-2xl mt-4`}>
+               <h3 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                 <Icon name="Target" className="text-white opacity-40" />
+                 {content.sections.benefits.title}
+               </h3>
+               <div className="grid gap-6">
+                  {content.sections.benefits.items.map((item, i) => (
+                    <div key={i} className="flex gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-lg font-bold text-green-400">
+                        ✓
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-2xl mb-1" style={{ color: theme.accentColor }}>{item.title}</h4>
+                        <p className="text-lg opacity-50">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+               </div>
+            </div>
+          </div>
+
+          {/* Section 3: Service Corporate */}
+          <div className={`relative overflow-hidden p-8 lg:p-12 ${theme.borderRadius} bg-slate-800`}>
+             <div className="relative z-10 max-w-4xl mx-auto">
+                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-6 text-center">{content.sections.service.title}</h3>
+                <p className="text-white/90 text-2xl mb-12 text-center">{content.sections.service.description}</p>
+
+                <div className="space-y-6 mb-16">
+                   {content.sections.service.features.map((f, i) => (
+                     <div key={i} className="flex items-center gap-4 text-white text-2xl" style={{ marginLeft: i === 0 ? '15px' : '0' }}>
+                       <Icon name="Star" className="text-green-400 w-7 h-7 flex-shrink-0" style={{ fill: '#22c55e' }} />
+                       <span className="text-right">{f}</span>
+                     </div>
+                   ))}
+                </div>
+
+                <div className="pt-10 border-t border-white/20">
+                   <p className="text-2xl font-bold text-white mb-8 text-center">חברות שנהנו מהשירות</p>
+                   <div className="flex justify-center gap-6 items-center flex-wrap">
+                      {content.sections.service.clients.map((c, i) => (
+                        <div key={i} className="bg-white px-8 py-4 rounded-lg font-bold text-2xl" style={{ color: '#dc2626' }}>
+                          {c}
+                        </div>
+                      ))}
+                   </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </main>
+
+    </>
+  );
+};
+
+export default LayoutEngine;

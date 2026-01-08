@@ -1,0 +1,6 @@
+
+{
+  "name": "DesignMorph AI - Landing Page Evolution",
+  "description": "A sophisticated UI redesign tool that transforms standard landing page layouts into avant-garde, modern designs using Gemini AI reasoning and advanced Tailwind CSS techniques.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
