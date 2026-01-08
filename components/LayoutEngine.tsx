@@ -60,7 +60,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
       </header>
 
       {/* Main Experience */}
-      <main className="relative pt-24 sm:pt-28">
+      <main className="relative pt-0 sm:pt-28">
         {/* Top Section with Background Image */}
         <section className="relative overflow-hidden">
           {/* Background Image */}
@@ -74,7 +74,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           </div>
 
           {/* What is Tuina Section */}
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-0 pb-8 sm:pb-12">
             <div className="max-w-4xl mx-auto">
               <div className={`p-6 sm:p-10 glass ${theme.borderRadius} sm:bg-opacity-100 bg-opacity-70`}>
                 <div className="hidden sm:flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
