@@ -28,7 +28,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex-1">
               <div className="flex items-baseline gap-2">
                 <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <p className="text-xs font-cursive font-bold" style={{ color: '#22c55e' }}>הבריאות שלכם מגיעה עד המשרד</p>
+                <p className="text-xs font-cursive font-bold" style={{ color: '#22c55e' }}>טווינא ובריאות במשרד</p>
               </div>
               <a href={`tel:${content.brand.phone}`} className="text-sm font-bold mt-1 block" style={{ color: theme.primaryColor }}>
                 {content.brand.phone}
@@ -81,10 +81,6 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                   <h2 className="text-2xl sm:text-3xl md:text-5xl font-cursive font-extrabold leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
                     הבריאות שלכם מגיעה עד המשרד
                   </h2>
-                </div>
-                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                  <Icon name="Info" className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: theme.primaryColor }} />
-                  <h3 className="text-2xl sm:text-4xl font-bold">{content.sections.what.title}</h3>
                 </div>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl opacity-80 leading-relaxed">
                   {content.sections.what.content.map((p, i) => (
