@@ -48,7 +48,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                   {content.brand.phone}
                 </a>
               </div>
-              <p className="text-base uppercase tracking-widest opacity-50 font-bold mt-1">{content.brand.title}</p>
+              <p className="text-base font-cursive font-bold mt-1" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
             </div>
           </div>
         </div>
@@ -72,11 +72,6 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-0 pb-8 sm:pb-12">
             <div className="max-w-4xl mx-auto">
               <div className={`p-6 sm:p-10 ${theme.borderRadius} bg-white/60`}>
-                <div className="hidden sm:flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-cursive font-extrabold leading-[1.1] tracking-tight text-center" style={{ color: '#22c55e' }}>
-                    הבריאות שלכם מגיעה עד המשרד
-                  </h2>
-                </div>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content.map((p, i) => (
                     <p key={i}>{p}</p>
