@@ -99,7 +99,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12">
             {/* About */}
             <div className="lg:col-span-2">
-              <div className={`p-6 sm:p-10 ${theme.borderRadius} bg-white/60`}>
+              <div className={`p-6 sm:p-10 ${theme.borderRadius} bg-white/60 border-2 border-black`}>
                  <h3 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6">
                    {content.sections.about.title}
                  </h3>
