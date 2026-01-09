@@ -51,7 +51,7 @@ export const TUINA_CONTENT: LandingContent = {
         "<strong>פורמט הטיפול:</strong> מפגשים ממוקדים של כ 30 -15 דקות לעובד",
         "<strong>התאמה אישית:</strong> הטיפול מותאם לבקשת המטופל",
         "<strong>ניידות מלאה:</strong> ציוד קל ונייד המותאם לסביבת משרד",
-        "<strong>זמינות גמישה:</strong> התאמה ללוח הזמנים של החברה"
+        "<strong>ייעוץ כושר:</strong> ניתן לשלב גם ייעוץ כושר לפי צרכים אישיים"
       ],
       clients: ["Sony", "DriveNets"]
     }
