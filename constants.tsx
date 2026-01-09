@@ -41,7 +41,7 @@ export const TUINA_CONTENT: LandingContent = {
       items: [
         { title: "כאבי גב, שכמות וצוואר", description: "אידיאלי לעובדים בישיבה ממושכת מול מחשב" },
         { title: "כאבי ראש על רקע מתח", description: "שחרור שרירים כואבים והורדת מתח נפשי" },
-        { title: "דלקות בגידים ובמפרקים", description: "טיפול יעיל בכאבים בעקבות עבודה קשה" }
+        { title: "דלקות בגידים ובמפרקים", description: "טיפול יעיל בכאבים בעקבות מאמץ ממושך" }
       ]
     },
     service: {
