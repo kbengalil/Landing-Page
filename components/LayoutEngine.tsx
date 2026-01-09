@@ -112,7 +112,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             {/* Benefits */}
             <div className="lg:col-span-2 space-y-4">
                {/* Benefits Header */}
-               <div className={`p-4 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
+               <div className={`p-2 sm:p-3 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
                  <h3 className="text-2xl sm:text-3xl font-bold text-center">
                    {content.sections.benefits.title}
                  </h3>
@@ -121,7 +121,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                {/* Benefits Items */}
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                  {content.sections.benefits.items.map((item, i) => (
-                   <div key={i} className={`p-4 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
+                   <div key={i} className={`p-2 sm:p-3 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
                      <div className="flex gap-3 sm:gap-4">
                        <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/20 flex items-center justify-center text-sm sm:text-lg font-bold text-green-400">
                          ✓
