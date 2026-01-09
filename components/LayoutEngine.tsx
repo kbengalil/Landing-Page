@@ -69,7 +69,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           </div>
 
           {/* What is Tuina Section */}
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-0 pb-16 sm:pb-24 space-y-8 sm:space-y-12">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 sm:pt-8 pb-16 sm:pb-24 space-y-8 sm:space-y-12">
             <div className="max-w-4xl mx-auto">
               <div className={`p-3 sm:p-4 ${theme.borderRadius} bg-white/80`}>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
