@@ -110,9 +110,8 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
 
             {/* Benefits */}
-            <div className={`p-6 bg-slate-900 text-white ${theme.borderRadius} shadow-2xl`}>
-               <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
-                 <Icon name="Target" className="text-white opacity-40" />
+            <div className={`p-6 bg-slate-900 text-white ${theme.borderRadius} shadow-2xl border-2`} style={{ borderColor: '#f0fdf4' }}>
+               <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
                  {content.sections.benefits.title}
                </h3>
                <div className="grid gap-4 sm:gap-6">
