@@ -93,7 +93,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
         </section>
 
         {/* Grid Sections */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-32 space-y-8 sm:space-y-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-16 sm:pb-32 space-y-8 sm:space-y-12">
 
           {/* Section 2: About & Benefits Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12">
