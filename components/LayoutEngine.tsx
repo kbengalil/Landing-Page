@@ -71,7 +71,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
           {/* What is Tuina Section */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-20 sm:pt-0 pb-8 sm:pb-12 space-y-8 sm:space-y-12">
             <div className="max-w-4xl mx-auto">
-              <div className={`p-4 sm:p-6 ${theme.borderRadius} bg-white/60`}>
+              <div className={`p-3 sm:p-4 ${theme.borderRadius} bg-white/60`}>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content.map((p, i) => (
                     <p key={i}>{p}</p>
@@ -81,7 +81,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <div className={`p-4 sm:p-6 ${theme.borderRadius} bg-white/60`}>
+              <div className={`p-3 sm:p-4 ${theme.borderRadius} bg-white/60`}>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content2.map((p, i) => (
                     <p key={i}>{p}</p>
