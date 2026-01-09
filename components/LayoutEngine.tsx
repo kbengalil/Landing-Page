@@ -110,7 +110,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
 
             {/* Benefits */}
-            <div className={`p-6 bg-slate-900 text-white ${theme.borderRadius} shadow-2xl border-2`} style={{ borderColor: '#f0fdf4' }}>
+            <div className={`p-6 text-white ${theme.borderRadius} shadow-2xl border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
                <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
                  {content.sections.benefits.title}
                </h3>
