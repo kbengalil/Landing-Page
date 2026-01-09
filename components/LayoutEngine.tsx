@@ -74,7 +74,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
               <div className={`p-3 sm:p-4 ${theme.borderRadius} bg-white/60`}>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content.map((p, i) => (
-                    <p key={i}>{p}</p>
+                    <p key={i} dangerouslySetInnerHTML={{ __html: p }}></p>
                   ))}
                 </div>
               </div>
@@ -84,7 +84,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
               <div className={`p-3 sm:p-4 ${theme.borderRadius} bg-white/60`}>
                 <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
                   {content.sections.what.content2.map((p, i) => (
-                    <p key={i}>{p}</p>
+                    <p key={i} dangerouslySetInnerHTML={{ __html: p }}></p>
                   ))}
                 </div>
               </div>
