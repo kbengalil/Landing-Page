@@ -104,7 +104,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                    {content.sections.about.title}
                  </h3>
                  <div className="space-y-3 sm:space-y-4 text-lg sm:text-2xl font-bold leading-relaxed text-gray-900">
-                    {content.sections.about.content.map((p, i) => <p key={i}>{p}</p>)}
+                    {content.sections.about.content.map((p, i) => <p key={i} dangerouslySetInnerHTML={{ __html: p }}></p>)}
                  </div>
               </div>
             </div>
