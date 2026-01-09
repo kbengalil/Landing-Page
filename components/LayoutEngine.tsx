@@ -149,7 +149,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                 </div>
 
                 <div className="pt-6 sm:pt-10 border-t border-gray-300">
-                   <p className="text-lg sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">חברות שנהנו מהשירות</p>
+                   <p className="text-lg sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">בין החברות אשר נהנו מהשירות</p>
                    <div className="flex justify-center gap-3 sm:gap-6 items-center flex-wrap">
                       {content.sections.service.clients.map((c, i) => (
                         <div key={i} className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-2xl border-2 border-black" style={{ color: '#dc2626' }}>
