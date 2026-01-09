@@ -110,22 +110,29 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
 
             {/* Benefits */}
-            <div className={`p-6 text-white ${theme.borderRadius} shadow-2xl border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
-               <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
-                 {content.sections.benefits.title}
-               </h3>
-               <div className="grid gap-4 sm:gap-6">
-                  {content.sections.benefits.items.map((item, i) => (
-                    <div key={i} className="flex gap-3 sm:gap-4">
-                      <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/20 flex items-center justify-center text-sm sm:text-lg font-bold text-green-400">
-                        ✓
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-lg sm:text-2xl mb-1 text-white">{item.title}</h4>
-                        <p className="text-sm sm:text-lg text-white">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
+            <div className="lg:col-span-2 space-y-4">
+               {/* Benefits Header */}
+               <div className={`p-4 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
+                 <h3 className="text-2xl sm:text-3xl font-bold text-center">
+                   {content.sections.benefits.title}
+                 </h3>
+               </div>
+
+               {/* Benefits Items */}
+               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                 {content.sections.benefits.items.map((item, i) => (
+                   <div key={i} className={`p-4 text-white ${theme.borderRadius} border-2`} style={{ backgroundColor: '#475569', borderColor: '#f0fdf4' }}>
+                     <div className="flex gap-3 sm:gap-4">
+                       <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/20 flex items-center justify-center text-sm sm:text-lg font-bold text-green-400">
+                         ✓
+                       </div>
+                       <div>
+                         <h4 className="font-bold text-lg sm:text-2xl mb-1 text-white">{item.title}</h4>
+                         <p className="text-sm sm:text-lg text-white">{item.description}</p>
+                       </div>
+                     </div>
+                   </div>
+                 ))}
                </div>
             </div>
           </div>
