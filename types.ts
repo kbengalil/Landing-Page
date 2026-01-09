@@ -30,6 +30,7 @@ export interface LandingContent {
     what: {
       title: string;
       content: string[];
+      content2: string[];
     };
     about: {
       title: string;
