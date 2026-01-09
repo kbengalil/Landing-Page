@@ -27,12 +27,12 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
             <div className="flex-1">
               <div className="flex items-baseline gap-3">
-                <h1 className="text-lg font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-base font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
+                <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
-              <p className="text-sm font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
+              <p className="text-base font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
             </div>
           </div>
 
@@ -43,12 +43,12 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             </div>
             <div className="flex flex-col">
               <div className="flex items-baseline gap-4">
-                <h1 className="text-4xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-3xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                <h1 className="text-5xl font-black tracking-tight leading-none">{content.brand.name}</h1>
+                <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
-              <p className="text-base font-cursive font-bold mt-1" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
+              <p className="text-xl font-cursive font-bold mt-1" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                        </div>
                        <div>
                          <h4 className="font-bold text-lg sm:text-2xl mb-1 text-white">{item.title}</h4>
-                         <p className="text-sm sm:text-lg text-white">{item.description}</p>
+                         <p className="text-sm sm:text-lg text-green-400">{item.description}</p>
                        </div>
                      </div>
                    </div>
