@@ -122,7 +122,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                       </div>
                       <div>
                         <h4 className="font-bold text-lg sm:text-2xl mb-1 text-white">{item.title}</h4>
-                        <p className="text-sm sm:text-lg opacity-50 text-white">{item.description}</p>
+                        <p className="text-sm sm:text-lg text-white">{item.description}</p>
                       </div>
                     </div>
                   ))}
