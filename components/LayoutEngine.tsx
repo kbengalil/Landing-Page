@@ -28,9 +28,19 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex-1">
               <div className="flex items-baseline gap-3">
                 <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
-                  {content.brand.phone}
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={`https://wa.me/${content.brand.whatsapp.number}?text=${encodeURIComponent(content.brand.whatsapp.message)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <Icon name="MessageCircle" className="w-6 h-6" style={{ color: '#dc2626' }} />
+                  </a>
+                  <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                    {content.brand.phone}
+                  </a>
+                </div>
               </div>
               <p className="text-base font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר עד המשרד</p>
             </div>
@@ -42,11 +52,21 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
               <Icon name="Leaf" className="w-8 h-8" />
             </div>
             <div className="flex flex-col">
-              <div className="flex items-baseline gap-4">
+              <div className="flex items-baseline gap-6">
                 <h1 className="text-5xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
-                  {content.brand.phone}
-                </a>
+                <div className="flex items-center gap-4">
+                  <a
+                    href={`https://wa.me/${content.brand.whatsapp.number}?text=${encodeURIComponent(content.brand.whatsapp.message)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <Icon name="MessageCircle" className="w-8 h-8" style={{ color: '#dc2626' }} />
+                  </a>
+                  <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                    {content.brand.phone}
+                  </a>
+                </div>
               </div>
               <p className="text-xl font-cursive font-bold mt-1" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
             </div>

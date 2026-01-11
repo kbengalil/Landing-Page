@@ -18,7 +18,11 @@ export const TUINA_CONTENT: LandingContent = {
   brand: {
     name: "כפיר בן גליל",
     title: "טווינא עד המשרד",
-    phone: "054-7768474"
+    phone: "054-7768474",
+    whatsapp: {
+      number: "972547768474",
+      message: "היי, אני מעוניין בטיפול טווינא"
+    }
   },
   sections: {
     what: {
