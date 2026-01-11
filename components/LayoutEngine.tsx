@@ -35,7 +35,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
                   >
-                    <img src="/whatsapp-icon.avif" alt="WhatsApp" className="w-10 h-10" />
+                    <img src="/whatsapp-icon.jpg" alt="WhatsApp" className="w-10 h-10" />
                   </a>
                   <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                     {content.brand.phone}
@@ -61,7 +61,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
                   >
-                    <img src="/whatsapp-icon.avif" alt="WhatsApp" className="w-12 h-12" />
+                    <img src="/whatsapp-icon.jpg" alt="WhatsApp" className="w-12 h-12" />
                   </a>
                   <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                     {content.brand.phone}
