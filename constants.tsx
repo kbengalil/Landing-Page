@@ -17,7 +17,7 @@ export const DEFAULT_THEME: DesignTheme = {
 export const TUINA_CONTENT: LandingContent = {
   brand: {
     name: "כפיר בן גליל",
-    title: "טווינא עד המשרד",
+    title: "טווינא וייעוץ כושר עד למשרד",
     phone: "054-7768474",
     whatsapp: {
       number: "972547768474",
