@@ -21,7 +21,7 @@ export const TUINA_CONTENT: LandingContent = {
     phone: "054-7768474",
     whatsapp: {
       number: "972547768474",
-      message: "היי, אני מעוניין בטיפול טווינא"
+      message: "הי, אשמח שתחזוא אלי לגבי טווינא אצלינו במשרדים"
     }
   },
   sections: {
