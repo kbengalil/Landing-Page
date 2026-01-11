@@ -28,19 +28,9 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex-1">
               <div className="flex items-baseline gap-3">
                 <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <div className="flex items-center gap-2">
-                  <a
-                    href={`https://wa.me/${content.brand.whatsapp.number}?text=${encodeURIComponent(content.brand.whatsapp.message)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    <img src="/whatsapp-icon.jpg" alt="WhatsApp" className="w-10 h-10" />
-                  </a>
-                  <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
-                    {content.brand.phone}
-                  </a>
-                </div>
+                <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                  {content.brand.phone}
+                </a>
               </div>
               <p className="text-base font-cursive font-bold mt-0.5" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר עד המשרד</p>
             </div>
@@ -54,25 +44,26 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex flex-col">
               <div className="flex items-baseline gap-6">
                 <h1 className="text-5xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <div className="flex items-center gap-4">
-                  <a
-                    href={`https://wa.me/${content.brand.whatsapp.number}?text=${encodeURIComponent(content.brand.whatsapp.message)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    <img src="/whatsapp-icon.jpg" alt="WhatsApp" className="w-12 h-12" />
-                  </a>
-                  <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
-                    {content.brand.phone}
-                  </a>
-                </div>
+                <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                  {content.brand.phone}
+                </a>
               </div>
               <p className="text-xl font-cursive font-bold mt-1" style={{ color: '#15803d' }}>טווינא בשילוב ייעוץ כושר ובריאות עד המשרד</p>
             </div>
           </div>
         </div>
       </header>
+
+      {/* Fixed Floating WhatsApp Button */}
+      <a
+        href={`https://wa.me/${content.brand.whatsapp.number}?text=${encodeURIComponent(content.brand.whatsapp.message)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed left-4 top-20 sm:top-32 z-40 hover:scale-110 transition-transform duration-200 shadow-lg rounded-full"
+        title="Contact via WhatsApp"
+      >
+        <img src="/whatsapp-icon.jpg" alt="WhatsApp" className="w-14 h-14 sm:w-16 sm:h-16 rounded-full" />
+      </a>
 
       {/* Main Experience */}
       <main className="relative pt-0 sm:pt-28">
