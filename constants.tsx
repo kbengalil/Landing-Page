@@ -57,7 +57,7 @@ export const TUINA_CONTENT: LandingContent = {
         "<strong>ניידות מלאה:</strong> ציוד קל ונייד המותאם לסביבת משרד",
         "<strong>ייעוץ כושר:</strong> ניתן לשלב גם ייעוץ כושר לפי צרכים אישיים"
       ],
-      clients: ["Sony", "DriveNets"]
+      clients: ["Sony", "Great Shape", "DriveNets"]
     }
   }
 };

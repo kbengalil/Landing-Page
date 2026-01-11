@@ -28,7 +28,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex-1">
               <div className="flex items-baseline gap-3">
                 <h1 className="text-xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-lg font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                <a href={`tel:${content.brand.phone}`} className="text-xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
@@ -44,7 +44,7 @@ const LayoutEngine: React.FC<LayoutEngineProps> = ({ theme, content }) => {
             <div className="flex flex-col">
               <div className="flex items-baseline gap-6">
                 <h1 className="text-5xl font-black tracking-tight leading-none">{content.brand.name}</h1>
-                <a href={`tel:${content.brand.phone}`} className="text-4xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
+                <a href={`tel:${content.brand.phone}`} className="text-5xl font-bold whitespace-nowrap" style={{ color: '#dc2626' }}>
                   {content.brand.phone}
                 </a>
               </div>
